@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #EBEAFF;
+}
+
+/** Card */
+.card {
+    width: 90%;
+    max-width: 560px;
+    background: linear-gradient(135deg, #00feba, #5b548a); /* Fixed */
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+/** Search */
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 35px;
+}
+
+/** Weather-icon */
+.Weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.Weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.Weather h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+/**  details */
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+/** col-1 */
+.col-1{
+    align-items: center;
+    display:flex;
+    text-align: left;
+}
+
+.col-1 img{
+    width: 40px;
+    margin-right: 10px ;
+}
+/**Humidity, wind */
+.Humidity, .wind{
+   font-size:28px;
+   margin-top: -6px;
+}
+
+
+/* Media Queries */
+/* Default Styles (Already Provided) */
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 30px 25px;
+    }
+
+    .search input {
+        height: 50px;
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search button img {
+        width: 30px;
+    }
+
+    .Weather h1 {
+        font-size: 60px;
+    }
+
+    .Weather h2 {
+        font-size: 28px;
+    }
+
+    .Weather-icon {
+        width: 140px;
+    }
+
+    .details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-1 {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .col-1 img {
+        width: 35px;
+    }
+
+    .Humidity, .wind {
+        font-size: 24px;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 25px 20px;
+        margin: 50px auto 0;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search input {
+        height: 45px;
+        font-size: 14px;
+        padding: 8px 15px;
+        width: 100%;
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .search button img {
+        width: 25px;
+    }
+
+    .Weather h1 {
+        font-size: 50px;
+    }
+
+    .Weather h2 {
+        font-size: 24px;
+    }
+
+    .Weather-icon {
+        width: 120px;
+    }
+
+    .details {
+        padding: 0 10px;
+    }
+
+    .col-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-1 img {
+        width: 30px;
+        margin-bottom: 5px;
+    }
+
+    .Humidity, .wind {
+        font-size: 22px;
+    }
+}
+
+/* For very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    .search input {
+        height: 40px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search button img {
+        width: 20px;
+    }
+
+    .Weather h1 {
+        font-size: 40px;
+    }
+
+    .Weather h2 {
+        font-size: 20px;
+    }
+
+    .Weather-icon {
+        width: 100px;
+    }
+
+    .Humidity, .wind {
+        font-size: 18px;
+    }
+}
