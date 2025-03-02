@@ -12,9 +12,25 @@ const api_key = "a987d5ec6a938609bda962e728ec07fe";
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".Humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
-    
     };
 
+// Corrected weather icon logic
+    if (data.weather[0].main === "Clouds") { 
+        Weathericon.src = "clouds.png"; 
+    } 
+    else if (data.weather[0].main === "Clear") { 
+        Weathericon.src = "clear.png"; 
+    }
+    else if (data.weather[0].main === "Rain") { 
+        Weathericon.src = "rain.png"; 
+    }
+    else if (data.weather[0].main === "Snow") { 
+        Weathericon.src = "snow.png"; 
+    }
+    else { 
+        Weathericon.src = "default.png"; // Fallback icon
+    }
+}
     search_btn.addEventListener('click', function(){
         check_weather(searchbox.value);
     });
